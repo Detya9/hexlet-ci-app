@@ -4,11 +4,11 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
-            -name: setup project
-            run: make setup
+            - name: setup project
+              run: make setup
 
-            -name: run tests
-            run: make test
+            - name: run tests
+              run: make test
 
-            -name: run linter
-            run: make lint
+            - name: run linter
+              run: make lint
