@@ -1,4 +1,5 @@
 name: setup test lint
+on: push
 jobs:
     build:
         runs-on: ubuntu-latest
