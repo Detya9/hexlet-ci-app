@@ -6,12 +6,16 @@ jobs:
 
         steps:
             - uses: actions/checkout@v4
+            - uses: actions/setup-node@v4
+              with:
+                node-version: 18
 
             - name: setup project
               run: make setup
-
             - name: run tests
               run: make test
-
             - name: run linter
               run: make lint
+            - name: Print Hello from Hexlet
+              uses: hexlet-components/hello-from-hexlet-action@release
+
